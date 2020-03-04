@@ -11,3 +11,118 @@ body {
 .logo > img {
   width: 50px;
 }
+
+.d-fl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.ls-n {
+  list-style: none;
+}
+
+p.ta-l {
+  padding-left: 0.5rem;
+}
+
+main {
+  padding-top: 1rem;
+}
+
+header.d-fl > * {
+  width: 100%;
+}
+
+nav.navbar {
+  background-color: grey;
+  color: white;
+  padding: 0 0.5rem;
+}
+
+ul.menu {
+  display: none;
+}
+
+section.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 95%;
+  margin: 1rem;
+}
+
+section.product > * {
+  width: 100%;
+}
+
+footer {
+  border-top: 1px solid grey;
+}
+
+ul.social {
+  justify-content: center;
+}
+
+li.social_icon {
+  width: 50px;
+}
+
+@media (min-width: 600px)  {
+  header > div.logo {
+    width: 25%;
+  }
+
+  header > h1.text {
+    width: 50%;
+  }
+
+  section.product {
+    width: 80%;
+  }
+
+  ul.social {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 800px)  {
+  header.d-fl {
+    justify-content: flex-start;
+  }
+
+  section.product {
+    width: 29%;
+  }
+
+  div.hamburger {
+    display: none;
+  }
+
+  ul.menu {
+    display: flex;
+    width: 100%;
+  }
+
+  ul.menu li {
+    max-width: 100px;
+    padding: 0 1rem;
+  }
+}
